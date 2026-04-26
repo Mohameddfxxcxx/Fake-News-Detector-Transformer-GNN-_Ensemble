@@ -1,0 +1,71 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+
+# --- Virtual envs ------------------------------------------------------------
+venv/
+.venv/
+env/
+.env
+.python-version
+
+# --- IDE / OS ----------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.claude/
+
+# --- Caches ------------------------------------------------------------------
+cache/
+.cache/
+.gradio/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Archives ----------------------------------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# --- Model weights / checkpoints --------------------------------------------
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# --- Generated / temporary artifacts ----------------------------------------
+_extracted/
+results/checkpoints/
+results/figures/
+results/tables/
+results/metrics/
+results/logs/
+results/batch_predictions*.csv
+
+# --- Runtime / logs ----------------------------------------------------------
+*.log
+logs/
+runs/
+wandb/
+mlruns/
+
+# --- Data --------------------------------------------------------------------
+data/
+
+# --- Notebook outputs --------------------------------------------------------
+*.ipynb_checkpoints

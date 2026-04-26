@@ -1,0 +1,94 @@
+Classification Reports — LIAR binary test split (n=1267)
+====================================================================
+Class balance: FAKE=553  REAL=714
+Static ensemble α (learned): 0.6076
+Dynamic α: mean=0.5871  std=0.0165
+====================================================================
+
+## BERT
+----
+Accuracy=0.6275  Precision=0.6190  Recall=0.6110  F1=0.6107  ROC-AUC=0.6518  PR-AUC=0.6997
+
+class           precision     recall   f1-score   support
+FAKE               0.5898     0.4810     0.5299       553
+REAL               0.6483     0.7409     0.6915       714
+accuracy                                 0.6275         0
+macro avg          0.6190     0.6110     0.6107      1267
+weighted avg       0.6228     0.6275     0.6210      1267
+
+## DistilRoBERTa
+-------------
+Accuracy=0.6172  Precision=0.6107  Recall=0.5906  F1=0.5836  ROC-AUC=0.6578  PR-AUC=0.7032
+
+class           precision     recall   f1-score   support
+FAKE               0.5960     0.3816     0.4653       553
+REAL               0.6254     0.7997     0.7019       714
+accuracy                                 0.6172         0
+macro avg          0.6107     0.5906     0.5836      1267
+weighted avg       0.6126     0.6172     0.5986      1267
+
+## GCN
+---
+Accuracy=0.6425  Precision=0.6354  Recall=0.6330  F1=0.6337  ROC-AUC=0.6732  PR-AUC=0.7160
+
+class           precision     recall   f1-score   support
+FAKE               0.5965     0.5588     0.5770       553
+REAL               0.6742     0.7073     0.6904       714
+accuracy                                 0.6425         0
+macro avg          0.6354     0.6330     0.6337      1267
+weighted avg       0.6403     0.6425     0.6409      1267
+
+## GraphSAGE
+---------
+Accuracy=0.6290  Precision=0.6210  Recall=0.6172  F1=0.6178  ROC-AUC=0.6609  PR-AUC=0.7045
+
+class           precision     recall   f1-score   support
+FAKE               0.5835     0.5244     0.5524       553
+REAL               0.6584     0.7101     0.6833       714
+accuracy                                 0.6290         0
+macro avg          0.6210     0.6172     0.6178      1267
+weighted avg       0.6257     0.6290     0.6262      1267
+
+## GAT
+---
+Accuracy=0.6314  Precision=0.6262  Recall=0.6269  F1=0.6265  ROC-AUC=0.6593  PR-AUC=0.7078
+
+class           precision     recall   f1-score   support
+FAKE               0.5757     0.5913     0.5834       553
+REAL               0.6767     0.6625     0.6695       714
+accuracy                                 0.6314         0
+macro avg          0.6262     0.6269     0.6265      1267
+weighted avg       0.6326     0.6314     0.6319      1267
+
+## GETE (static α=0.608)
+---------------------
+Accuracy=0.6354  Precision=0.6274  Recall=0.6214  F1=0.6219  ROC-AUC=0.6639  PR-AUC=0.7089
+
+class           precision     recall   f1-score   support
+FAKE               0.5958     0.5118     0.5506       553
+REAL               0.6591     0.7311     0.6932       714
+accuracy                                 0.6354         0
+macro avg          0.6274     0.6214     0.6219      1267
+weighted avg       0.6315     0.6354     0.6310      1267
+
+## GETE (dynamic fusion, mixed)
+----------------------------
+Accuracy=0.6346  Precision=0.6266  Recall=0.6213  F1=0.6219  ROC-AUC=0.6646  PR-AUC=0.7092
+
+class           precision     recall   f1-score   support
+FAKE               0.5934     0.5172     0.5527       553
+REAL               0.6599     0.7255     0.6911       714
+accuracy                                 0.6346         0
+macro avg          0.6266     0.6213     0.6219      1267
+weighted avg       0.6308     0.6346     0.6307      1267
+
+## GETE (dynamic fusion, head)
+---------------------------
+Accuracy=0.6267  Precision=0.6199  Recall=0.6192  F1=0.6195  ROC-AUC=0.6583  PR-AUC=0.7035
+
+class           precision     recall   f1-score   support
+FAKE               0.5741     0.5606     0.5672       553
+REAL               0.6657     0.6779     0.6718       714
+accuracy                                 0.6267         0
+macro avg          0.6199     0.6192     0.6195      1267
+weighted avg       0.6257     0.6267     0.6261      1267
